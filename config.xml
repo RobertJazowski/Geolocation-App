@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget id = "com.robjazowski.apps.Geolocation"
+  xmlns="http://www.w3.org/ns/widgets"
+  xmlns:cdv="http://cordova.apache.org/ns/1.0"
+>
+
+  <name>Geolocation REJ</name>
+
+  <description>Geolocation and Google Maps</description>
+
+  <author href="hvcc.edu" email="r-jazowski@hvcc.edu">Rob Jazowski</author>
+
+  <!-- Cordova/PhoneGap Version Reference -->
+  <!-- all: current version of PhoneGap -->
+  <preference name="cordova-version" value="cli-6.3.0" />
+
+  <platform name="android">
+    <allow-intent href="market:*" />
+  </platform>
+  <platform name="ios">
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+  </platform>
+
+  <content src="index.html" />
+
+  <plugin name="cordova-plugin-whitelist" spec="1" />
+  <access origin="*" />
+  <allow-intent href="http://*/*" />
+  <allow-intent href="https://*/*" />
+  <allow-intent href="tel:*" />
+  <allow-intent href="sms:*" />
+  <allow-intent href="mailto:*" />
+  <allow-intent href="geo:*" />
+  <!-- Access to the subdomain maps.google.com -->
+  <access origin="http://maps.google.com" />
+
+  <!-- Plugins Go Here-->
+  <!-- Core plugins -->
+  <plugin name="cordova-plugin-device" />
+  <plugin name="cordova-plugin-geolocation" />
+  <!-- Define app icon for each platform. -->
+  <icon src="Icon.png" />
+
+  <platform name="android">
+    <icon src="icons/android/mipmap-ldpi/ic_launcher.png" density="ldpi" />
+    <icon src="icons/android/mipmap-mdpi/ic_launcher.png" density="mdpi" />
+    <icon src="icons/android/mipmap-hdpi/ic_launcher.png" density="hdpi" />
+    <icon src="icons/android/mipmap-xhdpi/ic_launcher.png" density="xhdpi" />
+    <icon src="icons/android/mipmap-xhdpi/ic_launcher.png" density="xxhdpi" />
+    <icon src="icons/android/mipmap-xhdpi/ic_launcher.png" density="xxxhdpi" />
+  </platform>
+  <platform name="ios">
+    <!-- iPhone 6 Plus  -->
+    <icon src="icons/ios/AppIcon.appiconset/Icon-App-60x60@3x.png" width="180" height="180" />
+    <!-- iOS 7.0+ -->
+    <!-- iPhone / iPod Touch  -->
+    <icon src="icons/ios/AppIcon.appiconset/Icon-App-60x60@1x.png" width="60" height="60" />
+    <icon src="icons/ios/AppIcon.appiconset/Icon-App-60x60@2x.png" width="120" height="120" />
+    <!-- iPad -->
+    <icon src="icons/ios/AppIcon.appiconset/Icon-App-76x76@1x.png" width="76" height="76" />
+    <icon src="icons/ios/AppIcon.appiconset/Icon-App-76x76@2x.png" width="152" height="152" />
+    <!-- iOS 6.1 -->
+    <!-- Spotlight Icon -->
+    <icon src="icons/ios/AppIcon.appiconset/Icon-App-40x40@1x.png" width="40" height="40" />
+    <icon src="icons/ios/AppIcon.appiconset/Icon-App-40x40@2x.png" width="80" height="80" />
+    <!-- iPhone / iPod Touch -->
+    <icon src="icons/ios/AppIcon.appiconset/Icon-App-57x57@1x.png" width="57" height="57" />
+    <icon src="icons/ios/AppIcon.appiconset/Icon-App-60x60@2x.png" width="120" height="120" />
+    <!-- iPad -->
+    <icon src="icons/ios/AppIcon.appiconset/Icon-App-76x76@1x.png" width="76" height="76" />
+    <icon src="icons/ios/AppIcon.appiconset/Icon-App-76x76@2x.png" width="152" height="152" />
+    <!-- iPhone Spotlight and Settings Icon -->
+    <icon src="icons/ios/AppIcon.appiconset/Icon-App-29x29@1x.png" width="29" height="29" />
+    <icon src="icons/ios/AppIcon.appiconset/Icon-App-29x29@2x.png" width="58" height="58" />
+  </platform>
+
+</widget>

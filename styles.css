@@ -1,0 +1,33 @@
+/*styles.css*/
+body, html {
+    background-color: #204a87;
+    color: #d9efff;
+    font-family: calibri, arial;
+    text-align: center;
+    font-size: 1em;
+    height: 100%;
+    font-weight: bold;
+
+}
+h1, h2, h3 ,h4 {
+    color:#d9efff;
+}
+#DivMap {
+    width: 96%;
+    height: 70%;
+    border: 2px solid silver;
+    margin-right: auto;
+    margin-left: auto;
+}
+#BtnGetLocation {
+    display:none;
+    width:96%;
+    color:#204a87;
+    background:#d93fff;
+    border:2px solid silver;
+    font-size:1.5em;
+    font-weight:bold;
+    margin-right:auto;
+    margin-left:auto;
+
+}
